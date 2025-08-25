@@ -1,5 +1,6 @@
 //https://leetcode.com/problems/subsets-ii/description/
-
+// Time complexity : 2^N * N/2 => N * 2^(N - 1) => N * (1^N)
+// Space complexity : N 
 class Solution {
 public:
     void backtrack(vector<int>& nums, vector<vector<int>>& result, vector<int>& currentSubset, int start)
