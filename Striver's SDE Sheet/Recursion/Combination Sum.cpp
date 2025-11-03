@@ -12,7 +12,7 @@
 class Solution {
 public:
     vector<vector<int>> result;
-    void findCombination(vector<int> candidates, int target, int index, long sum, vector<int> temp)
+    void findCombination(vector<int>& candidates, int target, int index, long sum, vector<int> temp)
     {
         for(int i=index; i<candidates.size(); i++)
         {
