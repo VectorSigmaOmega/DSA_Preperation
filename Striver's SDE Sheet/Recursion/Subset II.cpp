@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/subsets-ii/description/
-// Time complexity : 2^N * N/2 => N * 2^(N - 1) => N * (1^N)
+// Time complexity : 2^N * N/2 => N * 2^(N - 1) => N * (2^N)
 // Space complexity : N 
 class Solution {
 public:
