@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/permutation-sequence/description/
+// Time complexity: O(n*n) + O(n) + O(n)
+// Space complexity: O(n) +O(n)
 
 class Solution {
 public:
@@ -20,7 +22,7 @@ public:
         {
             index=(int)(k/fact[n-1-i]);
             result.push_back(elements[index]);
-            elements.erase(index, 1);
+            elements.erase(index, 1); //O(n)
             k=k%fact[n-1-i];
         }
         return result;
