@@ -4,26 +4,26 @@
 
 class Solution {
   public:
-    void dfs(int node, vector<bool>& visited, stack<int>& st, vector<vector<int>>& edges)
+    void dfs(int node, vector<bool>& visited, stack<int>& st, vector<vector<int>>& adj)
     {
         visited[node]=true;
-        for(auto i:edges[node])
+        for(auto i:adj[node])
         {
             if(!visited[i])
             {
-                dfs(i, visited, st, edges);
+                dfs(i, visited, st, adj);
             }
         }
         st.push(node);
     }
-    vector<int> topoSort(int V, vector<vector<int>>& edges) {
+    vector<int> topoSort(int V, vector<vector<int>>& adj) {
         vector<bool> visited(V, false);
         stack<int> st;
         for(int i=0; i<V; i++)
         {
             if(!visited[i])
             {
-                dfs(i, visited, st, edges);
+                dfs(i, visited, st, adj);
             }
         }
         vector<int> ans;
