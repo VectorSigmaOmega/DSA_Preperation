@@ -1,4 +1,6 @@
-//Kann or TopoSort BFS
+//Kahn or TopoSort BFS
+// Time Complexity : O(V+E)
+// Space complexity : O(V)
 
 class Solution {
   public:
