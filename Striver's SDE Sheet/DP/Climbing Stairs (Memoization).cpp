@@ -7,7 +7,7 @@ public:
     {
         if(n<=1)
         {
-            return n;
+            return 1;
         }
         if(dp[n]!=-1)
         {
