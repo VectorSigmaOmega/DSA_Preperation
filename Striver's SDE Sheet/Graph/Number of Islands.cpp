@@ -2,7 +2,7 @@
 // Space Complexity: O(N*M) + O(min(N, M))  
 // Consider starting point to be corner of a grid. The queue stores the frontier wavefront. This is a diagonal. The max length of this diagonal would be
 // min(N, M). Draw a grid and try it out.
-
+// Single Source BFS
 
 class Solution {
 public:
