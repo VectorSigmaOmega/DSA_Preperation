@@ -1,5 +1,6 @@
 // TC : O(M*N)
 // SC: O(M*N)
+// Multisource BFS, hence not O(min(M, N))
 
 class Solution {
 public:
